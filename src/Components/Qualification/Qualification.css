@@ -113,43 +113,38 @@
 
 
 
-
-
-
-
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 860px) {
     .qualification_box
     {
-        width: 80%;
+        width: 80% !important;
     }
 }
 
-@media screen and (max-width: 580px) {
-    .qualification_box
+@media screen and (max-width: 640px) {
+     .qualification_box
     {
-        width: 100%;
+        width: 100% !important;
     }
 }
+
+
+@media screen and (max-width: 550px) {
+    .qualification_box
+    {
+        padding: 20px 0;
+    }
+}
+
 
 @media screen and (max-width: 500px) {
     .qualification_box
     {
         flex-direction: column;
     }
-    .work
-    {
-        border-left: 0px solid #000;
-    }
 
-    .work,
-    .education
+    .education,
+    .work
     {
         width: 100%;
     }
-
-    .qualification
-    {
-        height: auto;
-    }
 }
-

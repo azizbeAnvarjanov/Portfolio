@@ -191,8 +191,7 @@
     }
 
 
-    .front,
-    .microsoft
+    .front
     {
         width: 100%;
         display: grid;
@@ -203,14 +202,24 @@
         opacity: 0;
         left: 0;
         top: 10px;
-        visibility: hidden;
-        position: absolute;
     }
 
     .microsoft
     {
-        top: 30px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 0;
+        gap: 0px;
+        overflow: hidden;
+        opacity: 0;
+        left: 0;
+        top: 50px;
+        visibility: hidden;
+        position: absolute;
     }
+
+
  
     .front.active,
     .microsoft.active
@@ -221,8 +230,20 @@
 
     .skills
     {
-        height: 100vh;
+        height: auto;
     }
+    
+    .skills_box
+    {
+        position: relative;
+    }
+    .skills_2
+    {
+        position: absolute !important;
+        left: 0;
+        top: 20px;
+    }
+    
 
     .skills_1 p:nth-child(1),
     .skills_2 p:nth-child(1)
@@ -234,7 +255,7 @@
     .skills_1 p:nth-child(1).active,
     .skills_2 p:nth-child(1).active
     {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         display: flex;
     }
 
@@ -276,33 +297,20 @@
 
 
 
-@media screen and (max-width: 470px) {
-    .skills
+
+@media screen and (max-width: 370px) {
+    .skill h3
     {
-        height: 105vh;
+        font-size: .7em;
+    }
+
+    .skills_box
+    {
+        padding: 20px 0px;
+    }
+
+    .skills_1 p:nth-child(1)
+    {
+        margin-bottom: 0;
     }
 }
-
-@media screen and (max-width: 415px) {
-    .skills
-    {
-        height: 80vh;
-    }
-}
-
-@media screen and (max-width: 395px) {
-    .skills
-    {
-        height: 85vh;
-    }
-}
-
-@media screen and (max-width: 361px) {
-    .skills
-    {
-        height: 95vh;
-    }
-}
-
-
-
