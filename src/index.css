@@ -46,3 +46,8 @@ a
   --gray: rgb(184, 179, 179); 
 }
 
+
+body
+{
+  background: var(--f);
+}
