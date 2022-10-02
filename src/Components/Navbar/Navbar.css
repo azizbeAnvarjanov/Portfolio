@@ -115,6 +115,7 @@ nav ul li a
         height: 10vh;
         border-radius: 50px;
         padding: 0 8%;
+        z-index: 1;
     }
     
     nav ul
