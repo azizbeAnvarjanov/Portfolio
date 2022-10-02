@@ -125,7 +125,11 @@
     height: 100%;
     object-fit: cover;
 }
-
+ .name
+    {
+        font-size: .6em;
+        background: #000 !important;
+    }
 
 
 
@@ -196,8 +200,8 @@
 
     .img
     {
-        width: 75%;
-        height: 80vh;
+        width: 60%;
+        height: 60vh;
     }
 
     
@@ -214,8 +218,8 @@
 @media screen and (max-width: 418px) {
     .img
     {
-        width: 70%;
-        height: 65vh;
+        width: 83%;
+        height: 75vh;
     }
 
     .img_box
@@ -230,10 +234,7 @@
         width: 85%;
     }
 
-    .name
-    {
-        font-size: .6em;
-    }
+   
 }
 
 
