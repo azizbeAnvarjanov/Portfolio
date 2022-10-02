@@ -175,16 +175,31 @@
         border-right: 0px solid #000;
     }
 
+    .skills_1,
+    .skills_2
+    {
+        width: 70%;
+    }
+
+
     
+}
+
+
+@media screen and (max-width: 580px) {
+    .skills_1,
+    .skills_2
+    {
+        width: 100%;
+    }
+
 }
 
 
 
 
-
-
 @media screen and (max-width: 500px) {
-
+    
     .buttons
     {
         display: block;
@@ -274,11 +289,6 @@
         padding: 20px 0;
     }
 
-    .skills_1,
-    .skills_2
-    {
-        width: 100%;
-    }
 
 
     .skill
