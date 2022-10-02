@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import Header from "./Components/Header/Header";
 import Skills from "./Components/Skills/Skills";
-
+import Qualification from "./Components/Qualification/Qualification";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <Navbar />
       <Header />
       <Skills />
+      <Qualification />
     </>
   );
 }

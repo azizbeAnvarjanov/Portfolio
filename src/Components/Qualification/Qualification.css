@@ -1,0 +1,155 @@
+.qualification
+{
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
+    color: var(--0);
+}
+
+.qualification h1, h5
+{
+    text-align: center;
+}
+
+.qualification h5
+{
+    color: var(--gray);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.qualification_box
+{
+    display: flex;
+    width: 55%;
+    margin: 0 auto; 
+    padding: 20px;
+    padding-top: 40px;
+}
+
+
+.education,
+.work
+{
+    width: 50%;
+    padding: 20px;
+}
+
+.work
+{
+    border-left: 1px solid var(--shadow);
+}
+
+
+.education p:nth-child(1),
+.work p:nth-child(1)
+{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education p:nth-child(1) svg,
+.work p:nth-child(1) svg
+{
+    margin-right: 5px;
+}
+
+
+
+.algoritm
+{
+    margin-top: 30px;
+}
+
+
+.work_title
+{
+    font-weight: 400 !important;
+    text-align: left;
+    color: var(--gray) !important;
+}
+
+.qualification_box h2
+{
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.algoritm p,
+.inlab p
+{
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: var(--gray);
+}
+
+.inlab_js,
+.algoritm_react
+{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    /* border: 1px solid #000; */
+}
+
+.inlab_js img,
+.algoritm_react img
+{
+    margin-left: 15px;
+}
+
+.inlab_js img,
+.algoritm_react img
+{
+    width: 20px;
+    height: 20px;   
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 750px) {
+    .qualification_box
+    {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .qualification_box
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .qualification_box
+    {
+        flex-direction: column;
+    }
+    .work
+    {
+        border-left: 0px solid #000;
+    }
+
+    .work,
+    .education
+    {
+        width: 100%;
+    }
+
+    .qualification
+    {
+        height: auto;
+    }
+}
+
