@@ -274,6 +274,12 @@
     }
 }
 
+@media screen and (max-width: 415px) {
+    .img
+    {
+        width: 80%;
+    }
+}
 
 @media screen and (max-width: 400px) {
     .img
