@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li
+{
+  list-style: none;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+:root
+{
+  --f: #fff; 
+  --0: #202020;
+  --shadow:  rgba(20, 17, 17, 0.3);
+  --gray: rgb(128, 128, 128); 
+}
+
+
+.active_body
+{
+  --shadow:  rgba(117, 115, 115, 0.795); 
+  --f: #202020; 
+  --0: #fff; 
+  --gray: rgb(184, 179, 179); 
+}
+
