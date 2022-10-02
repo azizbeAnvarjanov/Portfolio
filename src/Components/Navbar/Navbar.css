@@ -1,7 +1,6 @@
 
 nav
 {
-    background: var(--f);
     width: 100%;
     position: fixed;
     height: 13vh;
@@ -10,6 +9,7 @@ nav
     justify-content: space-between;
     padding: 0 5%;
     transition: .5s;
+    z-index: 1;
 }
 
 .navbar_active

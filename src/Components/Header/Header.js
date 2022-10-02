@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './Heade.css'
-import Img from '../../imgs/Azizbek.jpg'
+import Img from '../../imgs/azg.png'
 import { FaRegComment, FaTelegram } from 'react-icons/fa';
 import { GrInstagram } from 'react-icons/gr';
 import { BsGithub } from 'react-icons/bs';
-
+import bg from '../../imgs/bg33.jpg'
 
 function Header() {
 
@@ -12,7 +12,10 @@ function Header() {
 
   return (
     <>
-        <div className="name">
+      <div className="header">
+        <img className='bg_img_header' src={bg} alt="" />
+      </div>
+        {/* <div className="name">
             <h1>Hi, I'm Anvarjanov Azizbek</h1>
             <h1>Frontend Developer</h1>
         </div>
@@ -70,7 +73,7 @@ function Header() {
                 </div>
 
             </div>
-        </div>
+        </div> */}
     </>
   )
 }

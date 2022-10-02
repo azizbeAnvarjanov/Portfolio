@@ -16,6 +16,7 @@ import goggle from '../../imgs/google.png'
 
 
 
+
 function Skills() {
 
 
@@ -25,6 +26,8 @@ function Skills() {
     <>
 
         <div className="skills">
+
+
             <center>Skills</center>
                 <div className="buttons">
                     <button onClick={() => setTabs(1)} className={tabs === 1 ? 'active' : ''} >Frontend</button>
