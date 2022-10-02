@@ -263,3 +263,29 @@
     }
     
 }
+
+
+
+
+@media screen and (max-width: 450px) {
+    .img
+    {
+        width: 55%;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .img
+    {
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width: 300px) {
+    .img
+    {
+        width: 100%;
+    }
+}

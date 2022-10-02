@@ -50,4 +50,5 @@ a
 body
 {
   background: var(--f);
+  padding-bottom: 50px;
 }

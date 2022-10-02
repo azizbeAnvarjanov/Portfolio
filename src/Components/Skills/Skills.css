@@ -267,3 +267,21 @@
     }
 
 }
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 470px) {
+    .skills
+    {
+        height: 125vh;
+    }
+}
+
+
+
