@@ -1,0 +1,177 @@
+.projects
+{
+  width: 100%;
+  height: auto;
+}
+
+
+.projects h1, h4
+{
+  text-align: center;
+  color: var(--0);
+}
+
+.project_box
+{
+  width: 100%;
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.project-img,
+.project-info
+{
+  width: 50%;
+  height: 70vh;
+  padding: 20px;
+  color: var(--0);
+}
+
+.project-info
+{
+  padding-top: 40px;
+}
+
+
+.project-img img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.project-info p
+{
+  margin: 10px 0;
+}
+
+.programming_lng
+{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.programming_lng span
+{
+  width: 25px;
+  height: 25px;
+  display: block;
+  margin-right: 10px;
+}
+
+.programming_lng span img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.project_description
+{
+  width: 70%;
+  font-weight: 600;
+}
+
+
+.demo_btn
+{
+  padding: 5px 20px;
+  border: 2px solid var(--0);
+  border-radius: 5px;
+  color: var(--0);
+  font-weight: 600;
+  transition: .5s;
+}
+
+.demo_btn:hover
+{
+  background: var(--0);
+  color: var(--f);
+}
+
+
+.project_2 .project-img,
+.project_4 .project-img,
+.project_6 .project-img
+{
+  order: 2;
+}
+
+.project_2 .project-info,
+.project_4 .project-info,
+.project_6 .project-info
+{
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+
+.project_4 .project-img img
+{
+  box-shadow: 0 0 10px var(--shadow);
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+  .project_box
+  {
+    flex-direction: column;
+    height: auto;
+  }
+
+  
+  .project_2,
+  .project_4,
+  .project_6
+  {
+    flex-direction: column-reverse;
+  }
+
+  .project-info
+  {
+    padding-top: 0;
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .project-img
+  {
+    padding: 10px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project-info
+  {
+    padding-top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .project-img
+  {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project-img
+  {
+    height: 40vh;
+  }
+}
+

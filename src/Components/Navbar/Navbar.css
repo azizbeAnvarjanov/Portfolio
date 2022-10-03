@@ -9,7 +9,7 @@ nav
     justify-content: space-between;
     padding: 0 5%;
     transition: .5s;
-    z-index: 1;
+    z-index: 999;
     background: var(--f);
 }
 
@@ -116,7 +116,7 @@ nav ul li a
         height: 10vh;
         border-radius: 50px;
         padding: 0 8%;
-        z-index: 1;
+        z-index: 999;
     }
     
     nav ul

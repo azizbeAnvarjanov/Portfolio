@@ -3,6 +3,9 @@ import Navbar from "./Components/Navbar/Navbar";
 import Header from "./Components/Header/Header";
 import Skills from "./Components/Skills/Skills";
 import Qualification from "./Components/Qualification/Qualification";
+import Project from './Components/Project/Project';
+
+
 
 function App() {
   return (
@@ -11,6 +14,7 @@ function App() {
       <Header />
       <Skills />
       <Qualification />
+      <Project />
     </>
   );
 }
