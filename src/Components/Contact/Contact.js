@@ -31,19 +31,21 @@ function Contact() {
 
                 
                 <div className='contact_form_2'>
-                      <h3> <RiSendPlaneLine/> Write your me message</h3>
-                        <fieldset className='input'>
-                              <legend>Name</legend>
-                              <input name="name" required type="text" placeholder='Write your name' />
-                        </fieldset>
-                    <fieldset className="input">
-                        <legend>Email</legend>
-                        <input name='email' required type="email" placeholder='Write your email'/>
-                    </fieldset>
-                    <fieldset className="textarea">
-                        <legend>Message</legend>
-                        <textarea name='message' required placeholder='Write your subject'></textarea>
-                    </fieldset>
+                    <h3> <RiSendPlaneLine/> Write your me message</h3>
+
+                    <div className="input">
+                        <p className="legend">Name</p>
+                        <input name="name" required type="text" placeholder='Write your name' />
+                    </div>
+                    <div className="input">
+                        <p className="legend">Email</p>
+                        <input name="emial" required type="email" placeholder='Write your email' />
+                    </div>
+                    <div className="textarea_box">
+                        <p className="legend">Message</p>
+                        <textarea className='textarea' placeholder='Write your message'></textarea>
+                    </div>
+                    <button type='submit' className='send_btn'>Send</button>
                 </div>
             </div>
         </div>

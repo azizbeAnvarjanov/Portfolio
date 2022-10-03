@@ -1,0 +1,64 @@
+.footer
+{
+    width: 100%;
+}
+
+.footer_box
+{
+    width: 70%;
+    border-top: 1px solid var(--gray);
+    margin: 20px auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.footer_box p
+{
+    margin: 10px 0 20px 0;
+    font-weight: 600;
+}
+
+.pages
+{
+    margin-bottom: 20px;
+}
+
+.pages a
+{
+    margin: 0 10px;
+    font-weight: 600;
+    color: var(--0);
+}
+
+
+.social_network_footer a
+{
+    color: var(--0);
+    margin: 0 10px;
+    transition: .5s;
+}
+
+.social_network_footer a:hover
+{
+    transform: translateY(15px) !important;
+    color: var(--gray);
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .footer_box
+    {
+        width: 90%;
+    }
+
+    .pages a
+    {
+        font-size: .7em;
+    }
+}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Heade.css'
 import Img from '../../imgs/Azizbek.jpg'
-import { FaRegComment, FaTelegram } from 'react-icons/fa';
+import { FaTelegram } from 'react-icons/fa';
 import { GrInstagram } from 'react-icons/gr';
 import { BsGithub } from 'react-icons/bs';
 
