@@ -229,11 +229,11 @@
 }
 
 @media screen and (max-width: 400px) {
-      .img_box
+    .img_box
     {
         width: 80%;
         margin: 0 auto;
-        height: 70vh;
+        height: 60vh;
     }
 
 }
