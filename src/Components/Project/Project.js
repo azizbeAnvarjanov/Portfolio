@@ -13,6 +13,10 @@ import Countries from '../../imgs/get country.png'
 import Github from '../../imgs/gihub .png'
 
 
+// icons
+import { FiLink2 } from 'react-icons/fi'
+import { ImGithub } from 'react-icons/im'
+
 function Project() {
   return (
     <>
@@ -39,36 +43,14 @@ function Project() {
                   <img src={Css} alt="" />
                 </span>
               </div>
-              <a href='#' className='demo_btn'>Demo</a>
+              <div className="demo_sourse_btns">
+              <a target="_blank" href='https://azizbeanvarjanov.github.io/google/' className='demo_btn'> <FiLink2 /> Demo</a>
+              <a target="_blank" href='https://github.com/azizbeAnvarjanov/google' className='demo_btn'> <ImGithub /> Sourse</a>
+              </div>
             </div>
         </div>
 
         <div className="project_box project_2">
-            <div className="project-img">
-              <img src={Music} alt="" />
-            </div>
-            <div className="project-info">
-            <h2>Music player</h2>
-            <p className='project_description'>
-              This project's music player has tried to be as similar as possible to this project's Windows Groove Music program.
-            </p>
-            <p>This project is written in these programming languages</p>
-              <div className="programming_lng">
-                <span>
-                  <img src={Html} alt="" />
-                </span>
-                <span>
-                  <img src={Js} alt="" />
-                </span>
-                <span>
-                  <img src={Css} alt="" />
-                </span>
-              </div>
-              <a href='#' className='demo_btn'>Demo</a>
-            </div>
-        </div>
-
-        <div className="project_box project_3">
             <div className="project-img">
               <img src={Github} alt="" />
             </div>
@@ -89,11 +71,14 @@ function Project() {
                   <img src={Css} alt="" />
                 </span>
               </div>
-              <a href='#' className='demo_btn'>Demo</a>
+            <div className="demo_sourse_btns">
+              <a target="_blank"  href='https://azizbeanvarjanov.github.io/github-api/' className='demo_btn'> <FiLink2 /> Demo</a>
+              <a  target="_blank" href='https://github.com/azizbeAnvarjanov/github-api' className='demo_btn'> <ImGithub /> Sourse</a>
+            </div>
             </div>
         </div>
 
-        <div className="project_box project_4">
+        <div className="project_box project_3">
             <div className="project-img">
               <img src={DondonZiki} alt="" />
             </div>
@@ -114,11 +99,14 @@ function Project() {
                   <img src={Css} alt="" />
                 </span>
               </div>
-              <a href='#' className='demo_btn'>Demo</a>
+            <div className="demo_sourse_btns">
+              <a target="_blank" href='https://azizbeanvarjanov.github.io/Rock-Paper-Scissors/' className='demo_btn'> <FiLink2 /> Demo</a>
+              <a target="_blank" href='https://github.com/azizbeAnvarjanov/Rock-Paper-Scissors' className='demo_btn'> <ImGithub /> Sourse</a>
+            </div>
             </div>
         </div>
         
-        <div className="project_box project_5">
+        <div className="project_box project_4">
             <div className="project-img">
               <img src={Todo} alt="" />
             </div>
@@ -137,11 +125,14 @@ function Project() {
                   <img src={Css} alt="" />
                 </span>
               </div>
-              <a href='#' className='demo_btn'>Demo</a>
+            <div className="demo_sourse_btns">
+              <a target="_blank" href='https://azizbeanvarjanov.github.io/sticky-note/' className='demo_btn'> <FiLink2 /> Demo</a>
+              <a target="_blank" href='https://github.com/azizbeAnvarjanov/sticky-note' className='demo_btn'> <ImGithub /> Sourse</a>
+            </div>
             </div>
         </div>
         
-        <div className="project_box project_6">
+        <div className="project_box project_5">
             <div className="project-img">
               <img src={Countries} alt="" />
             </div>
@@ -162,7 +153,10 @@ function Project() {
                   <img src={Css} alt="" />
                 </span>
               </div>
-              <a href='#' className='demo_btn'>Demo</a>
+            <div className="demo_sourse_btns">
+              <a target="_blank" href='https://azizbeanvarjanov.github.io/API-countries/' className='demo_btn'> <FiLink2 /> Demo</a>
+              <a target="_blank" href='https://github.com/azizbeAnvarjanov/API-countries' className='demo_btn'> <ImGithub /> Sourse</a>
+            </div>
             </div>
         </div>
       </div>

@@ -76,6 +76,12 @@
   font-weight: 600;
 }
 
+.demo_sourse_btns
+{
+  width: 240px;
+  display: flex;
+}
+
 
 .demo_btn
 {
@@ -85,6 +91,14 @@
   color: var(--0);
   font-weight: 600;
   transition: .5s;
+  margin-right: 10px;
+  display: flex;
+  align-items:center;
+}
+
+.demo_btn svg
+{
+  margin-right: 5px;
 }
 
 .demo_btn:hover
@@ -95,15 +109,14 @@
 
 
 .project_2 .project-img,
-.project_4 .project-img,
-.project_6 .project-img
+.project_4 .project-img
 {
   order: 2;
+  margin-left: 10px;
 }
 
 .project_2 .project-info,
-.project_4 .project-info,
-.project_6 .project-info
+.project_4 .project-info
 {
   text-align: right;
   display: flex;
@@ -133,8 +146,7 @@
 
   
   .project_2,
-  .project_4,
-  .project_6
+  .project_4
   {
     flex-direction: column-reverse;
   }

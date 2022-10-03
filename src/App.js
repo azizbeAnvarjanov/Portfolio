@@ -4,6 +4,7 @@ import Header from "./Components/Header/Header";
 import Skills from "./Components/Skills/Skills";
 import Qualification from "./Components/Qualification/Qualification";
 import Project from './Components/Project/Project';
+import Contact from './Components/Contact/Contact';
 
 
 
@@ -15,6 +16,7 @@ function App() {
       <Skills />
       <Qualification />
       <Project />
+      <Contact />
     </>
   );
 }
