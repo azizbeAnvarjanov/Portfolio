@@ -1,0 +1,46 @@
+.up_btn
+{
+    position: fixed;
+    bottom: 40px;
+    right: -40px;
+    font-size: 2em;
+    color: var(--0);
+    padding: 0;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 0 0 10px var(--shadow);
+    z-index: 11;
+    background: var(--f);
+    border-radius: 5px;
+}
+
+.up_btn.active
+{
+    right: 40px !important;
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .up_btn
+    {
+        bottom: 100px;
+    }
+    .up_btn.active
+    {
+        right: 40px !important;
+        bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .up_btn
+    {
+        bottom: 90px;
+    }
+    .up_btn.active
+    {
+        right: 20px !important;
+        bottom: 90px;
+    }
+}
