@@ -31,8 +31,11 @@ function Contact() {
           "Q5RBmXAwHj7bNCA38"
         )
         .then(
-          (result) => {
+          () => {
             document.querySelector('.popup').classList.add('active');
+            document.querySelector("#name").value = "";
+            document.querySelector("#email").value = "";
+            document.querySelector(".textarea").value = "";
           },
           (error) => {
             console.log(error.text);
@@ -42,7 +45,7 @@ function Contact() {
 
 
     function showPopup() {
-        document.querySelector('.popup').classList.remove('active');
+      document.querySelector('.popup').classList.remove('active');
     }
 
 
@@ -71,7 +74,6 @@ function Contact() {
         <form ref={form} onSubmit={sendEmail} className="contact_form">
           <div className="contact_form_1">
             <h3>
-              {" "}
               <FaRegComment /> Talk to me
             </h3>
             <div>
@@ -96,13 +98,13 @@ function Contact() {
 
           <div className="contact_form_2">
             <h3>
-              {" "}
               <RiSendPlaneLine /> Write your me message
             </h3>
 
             <div className="input">
               <p className="legend">Name</p>
               <input
+              id='name'
                 name="name"
                 required
                 type="text"
@@ -112,6 +114,7 @@ function Contact() {
             <div className="input">
               <p className="legend">Email</p>
               <input
+              id='email'
                 name="email"
                 required
                 type="email"
