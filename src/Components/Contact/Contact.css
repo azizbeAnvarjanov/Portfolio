@@ -4,6 +4,7 @@
     height: 100vh;
     color: var(--0);
     transition: .5s;
+    position: relative;
 }
 
 
@@ -131,6 +132,61 @@ textarea::placeholder
 
 
 
+.popup
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.582);
+    z-index: 999;
+}
+
+
+.popup_message
+{
+    width: 60%;
+    height: 70vh;
+    background: var(--f);
+    box-shadow: 0 0 10px var(--shadow);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    z-index: 11;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.popup_message svg
+{
+    font-size: 10em;
+    color: rgb(28, 226, 28);
+}
+
+.popup_message .message_popup
+{
+    margin: 20px 0;
+}
+
+
+.popup_message button
+{
+    background: rgb(18, 240, 18);
+    border: none;
+    padding: 8px 20px;
+    width: 100px;
+    color: var(--f);
+    font-weight: 500;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
 
 
 
@@ -148,6 +204,26 @@ textarea::placeholder
     {
         width: 100%;
         padding: 20px;
+    }
+
+
+
+    .popup_message
+    {
+        width: 80%;
+        height: 70vh;
+        background: var(--f);
+        box-shadow: 0 0 10px var(--shadow);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 20px;
+        z-index: 11;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -175,6 +251,24 @@ textarea::placeholder
     {
         margin-top: 20px !important;
     }
+
+    .popup_message
+    {
+        width: 90%;
+        height: 70vh;
+        background: var(--f);
+        box-shadow: 0 0 10px var(--shadow);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 20px;
+        z-index: 11;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -191,6 +285,24 @@ textarea::placeholder
     {
         width: 100%;
         margin: 0 auto;
+    }
+
+    .popup_message
+    {
+        width: 95%;
+        height: 80vh;
+        background: var(--f);
+        box-shadow: 0 0 10px var(--shadow);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 20px;
+        z-index: 11;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     
 
