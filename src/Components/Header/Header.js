@@ -11,7 +11,7 @@ function Header() {
 
   return (
     <>
-        <div className="name">
+        <div className="name" id='home'>
             <h1>Hi, I'm Anvarjanov Azizbek</h1>
             <h1>Frontend Developer</h1>
         </div>

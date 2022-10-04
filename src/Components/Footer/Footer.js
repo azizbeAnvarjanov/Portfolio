@@ -15,11 +15,9 @@ function Footer() {
                 <h2>Azizbek</h2>
                 <p>Frontend Developer</p>
                 <div className="pages">
-                    <a href="#">Home</a>
-                    <a href="#">Skills</a>
-                    <a href="#">Qualification</a>
-                    <a href="#">Project</a>
-                    <a href="#">Contact</a>
+                    <a href="#home">Home</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
                 </div>
                 <div className="social_network_footer">
                     <a href="#"><FaTelegram /></a>

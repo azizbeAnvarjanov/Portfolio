@@ -29,6 +29,14 @@ a
   text-decoration: none;
 }
 
+
+html,
+body
+{
+  scroll-behavior: smooth;
+}
+
+
 :root
 {
   --f: #fff; 

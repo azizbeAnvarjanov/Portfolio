@@ -9,7 +9,7 @@ import { RiSendPlaneLine } from 'react-icons/ri';
 function Contact() {
   return (
     <>
-        <div className="contact">
+        <div className="contact" id='contact'>
             <h1>Contact Me</h1>
             <h4>Get in touch</h4>
             <div className="contact_form">

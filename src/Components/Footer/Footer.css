@@ -1,6 +1,8 @@
 .footer
 {
     width: 100%;
+    color: var(--0);
+    transition: .5s;
 }
 
 .footer_box

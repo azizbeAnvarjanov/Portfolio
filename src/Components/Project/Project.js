@@ -20,7 +20,7 @@ import { ImGithub } from 'react-icons/im'
 function Project() {
   return (
     <>
-      <div className="projects">
+      <div className="projects" id='projects'>
         <h1>My Projects</h1>
         <h4>These projects are written in pure Javascript.</h4>
 
