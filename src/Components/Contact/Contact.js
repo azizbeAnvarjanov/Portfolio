@@ -26,13 +26,18 @@ function Contact() {
         )
         .then(
           (result) => {
-            console.log(result.text);
+            document.querySelector('.popup').classList.add('active');
           },
           (error) => {
             console.log(error.text);
           }
         );
     };
+
+
+    function showPopup() {
+        document.querySelector('.popup').classList.remove('active');
+    }
 
 
   return (
@@ -45,7 +50,7 @@ function Contact() {
                     <AiOutlineFileDone />
                 </div>
                 <h4 className="message_popup">Sizning habaringiz jonatildi habaringiz uchun raxmat.</h4>
-                <button>Ok</button>
+                <button onClick={showPopup}>Ok</button>
             </div>
         </div>
 
