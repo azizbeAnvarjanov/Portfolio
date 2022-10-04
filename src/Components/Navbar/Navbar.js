@@ -37,7 +37,7 @@ function Navbar() {
   return (
     <>
         <nav className={navbarActive ? 'navbar_active' : ''}>
-            <h1 className='desktop_logo'>Azizbek</h1>
+            <h1 className='desktop_logo'><a href="#home">Azizbek</a></h1>
             <ul className={navbar === 'hide_navbar' ? 'hide_navbar' : 'show_navbar'}>
                 <li>
                     <a onClick={() => show_navbar()} href="#home"><HiHome className='link_icon' />  Home</a>

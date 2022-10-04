@@ -42,6 +42,13 @@ nav ul li a
 }
 
 
+
+.desktop_logo a
+{
+    color: var(--0);
+}
+
+
 .dark_mode
 {
     position: relative;
