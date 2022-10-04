@@ -1,12 +1,38 @@
 import React, { useState, useEffect } from 'react'
 import { FiMoon, FiSun } from 'react-icons/fi';
+
+import { useTranslation } from "react-i18next";
+
 import './Navbar.css';
 import { FaRegComment } from 'react-icons/fa';
 import { HiHome } from 'react-icons/hi';
 import { BiCollection, BiCategory } from 'react-icons/bi'
-import { BsBook } from 'react-icons/bs'
+import { BsBook } from 'react-icons/bs';
+
+
+import i18next from 'i18next';
+
+const languages = [
+    {
+        language: 'uz',
+        country_code: 'uz'
+    },
+    {
+        language: 'ru',
+        country_code: 'ru'
+    },
+    {
+        language: 'en',
+        country_code: 'en'
+    },
+]
+
+
+
 
 function Navbar() {
+
+    const { t } = useTranslation();
 
     const [mode, setMode] = useState('dark');
     const [navbar, setNavbar] = useState('hide_navbar');
@@ -40,7 +66,7 @@ function Navbar() {
             <h1 className='desktop_logo'><a href="#home">Azizbek</a></h1>
             <ul className={navbar === 'hide_navbar' ? 'hide_navbar' : 'show_navbar'}>
                 <li>
-                    <a onClick={() => show_navbar()} href="#home"><HiHome className='link_icon' />  Home</a>
+                    <a onClick={() => show_navbar()} href="#home"><HiHome className='link_icon' />  {t('home')}</a>
                 </li>
                 <li>
                       <a onClick={() => show_navbar()} href="#skills"><BiCollection className='link_icon' />  Skills</a>
@@ -55,10 +81,11 @@ function Navbar() {
                 <li>
                     <a onClick={() => show_navbar()} href="#contact"><FaRegComment className='link_icon' />  Contact</a>
                 </li>
-                <div className="dark_mode">
-                    <FiMoon onClick={() => addClassDark()} className={mode === 'dark' ? 'active_mode' : ''}/>
-                    <FiSun onClick={() => addClassLight()} className={mode === 'light' ? 'active_mode' : '' }/>
-                </div>
+                  {
+                      languages.map(lng => (
+                          <a onClick={() => i18next.changeLanguage(lng.language)} key={lng.country_code} href="#">{lng.language}</a>
+                      ))
+                  }
             </ul>
               <div className={navbar === 'hide_navbar' ? 'menu' : 'menu active_menu'} onClick={() => show_navbar()}>
                 <span></span>
@@ -71,3 +98,8 @@ function Navbar() {
 }
 
 export default Navbar
+
+    // <div div className = "dark_mode" >
+    //                 <FiMoon onClick={() => addClassDark()} className={mode === 'dark' ? 'active_mode' : ''}/>
+    //                 <FiSun onClick={() => addClassLight()} className={mode === 'light' ? 'active_mode' : '' }/>
+    //             </div >
