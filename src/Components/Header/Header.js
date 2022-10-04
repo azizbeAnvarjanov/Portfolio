@@ -18,7 +18,7 @@ function Header() {
   return (
     <>
       <div
-        data-aos="fade-up"
+        data-aos="fade-in"
         data-aos-duration="3000"
         className="name"
         id="home"

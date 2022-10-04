@@ -66,5 +66,10 @@
         flex-wrap: wrap;
         width: 100%;
     }
+
+    .social_network_footer
+    {
+        margin-bottom: 30px;
+    }
  
 }
