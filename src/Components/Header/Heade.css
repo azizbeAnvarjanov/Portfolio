@@ -40,6 +40,7 @@
 }
 
 
+
 .img_box
 {
     order: 2;
@@ -110,6 +111,15 @@
     font-size: .9em;
     margin: 10px 0 ;
     font-weight: 500;
+}
+
+.home_info_1 .home_info_title
+{
+    text-align: left;
+}
+.home_info_2 .home_info_title
+{
+    text-align: right;
 }
 
 
