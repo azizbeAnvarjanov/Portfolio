@@ -10,6 +10,12 @@ import { FaRegComment } from 'react-icons/fa';
 import { RiSendPlaneLine } from 'react-icons/ri';
 import { AiOutlineFileDone } from 'react-icons/ai';
 
+
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
+
 function Contact() {
 
     const form = useRef();
@@ -42,16 +48,22 @@ function Contact() {
 
   return (
     <>
-      <div className="contact" id="contact">
-            
+      <div
+        className="contact"
+        id="contact"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
         <div className="popup">
-            <div className="popup_message">
-                <div className="icon_popup">
-                    <AiOutlineFileDone />
-                </div>
-                <h4 className="message_popup">Sizning habaringiz jonatildi habaringiz uchun raxmat.</h4>
-                <button onClick={showPopup}>Ok</button>
+          <div className="popup_message">
+            <div className="icon_popup">
+              <AiOutlineFileDone />
             </div>
+            <h4 className="message_popup">
+              Sizning habaringiz jonatildi habaringiz uchun raxmat.
+            </h4>
+            <button onClick={showPopup}>Ok</button>
+          </div>
         </div>
 
         <h1>Contact Me</h1>
@@ -109,7 +121,7 @@ function Contact() {
             <div className="textarea_box">
               <p className="legend">Message</p>
               <textarea
-                name='message'
+                name="message"
                 required
                 className="textarea"
                 placeholder="Write your message"

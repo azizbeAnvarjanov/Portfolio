@@ -5,11 +5,21 @@ import js from '../../imgs/js.png'
 import react from '../../imgs/React.png'
 
 
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
+
 
 function Qualification() {
   return (
     <>
-      <div className="qualification" id="qualification">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        className="qualification"
+        id="qualification"
+      >
         <h1>Qualification</h1>
         <h5>Experience & education</h5>
 
