@@ -32,6 +32,7 @@ nav
     align-items: center;
     justify-content: center;
     color: var(--0);
+    transition: .5s;
 }
 
 .lng_box a:last-child
@@ -41,7 +42,8 @@ nav
 
 .lng_box a.active
 {
-    border: 1px solid #000;
+    background: var(--0);
+    color: var(--f);
 }
 
 
@@ -58,7 +60,7 @@ nav ul
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 5%;
 }
 
@@ -67,6 +69,12 @@ nav ul li a
     color: var(--0);
     font-weight: 600;
 }
+
+nav ul li
+{
+    margin: 0 40px;
+}
+
 
 .desktop_logo
 {
@@ -124,6 +132,19 @@ nav ul li a
 
 
 
+@media (max-width: 950px) {
+    nav ul li
+    {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    nav ul li
+    {
+        margin: 0 12px;
+    }
+}
 @media (max-width: 850px) {
     nav
     {   
@@ -175,12 +196,11 @@ nav ul li a
     nav ul
     {
         position: fixed;
-        bottom: -100%;
         transition: .4s cubic-bezier(0.6,0,0.265,1.20);
         display: grid;
         gap: 20px;
         grid-template-columns: repeat(3,1fr);
-        height: 40vh;
+        height: 50vh;
         box-shadow: 0 0 10px var(--shadow);
         padding: 20px;
         left: 50%;
@@ -192,6 +212,10 @@ nav ul li a
         z-index: 1;
     }
     
+    nav ul li
+    {
+        margin: 0 0px;
+    }
 
 
 
@@ -236,7 +260,7 @@ nav ul li a
 
     .hide_navbar
     {
-        bottom: -500% !important;
+        bottom: -600% !important;
     }
     .show_navbar
     {

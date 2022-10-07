@@ -170,6 +170,8 @@
     {
         width: 100%;
     }
+
+   
 }
 
 
@@ -210,6 +212,11 @@
         display: flex;
         flex-direction: column;
         padding: 20px;
+    }
+
+    .home_info_2 .home_info_title
+    {
+        text-align: left;
     }
 
     .img_box

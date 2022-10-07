@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import './Navbar.css';
 import { FaRegComment } from 'react-icons/fa';
 import { FiSun, FiMoon } from 'react-icons/fi';
+import { IoLanguage } from 'react-icons/io5';
 import { HiHome } from 'react-icons/hi';
 import { BiCollection, BiCategory } from 'react-icons/bi'
 import { BsBook } from 'react-icons/bs';
@@ -56,6 +57,9 @@ function Navbar() {
     function show_navbar() {
         navbar === "hide_navbar" ? setNavbar('show_navabr') : setNavbar('hide_navbar');
     }
+    function show_lng() {
+      
+    }
 
     window.addEventListener('scroll', () => {
         scrollNavbar();
@@ -101,6 +105,11 @@ function Navbar() {
               <FaRegComment className="link_icon" /> Contact
             </a>
           </li>
+          <li>
+            <a onClick={() => show_lng()} href="#contact">
+              <IoLanguage className="link_icon" /> Le
+            </a>
+          </li>
           <div className="dark_mode">
             <FiMoon
               onClick={() => addClassDark()}
@@ -112,19 +121,6 @@ function Navbar() {
             />
           </div>
         </ul>
-        <div className="lng_box">
-          {
-            languages.map((lng) => (
-              <a
-                onClick={() => i18next.changeLanguage(lng.language)}
-                key={lng.country_code}
-                href="#"
-              >
-                {lng.language}
-              </a>
-            ))
-          }
-        </div>
         <div className={navbar === "hide_navbar" ? "menu" : "menu active_menu"}
           onClick={() => show_navbar()}>
           <span></span>
