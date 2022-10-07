@@ -17,6 +17,8 @@ import Github from '../../imgs/gihub .png'
 import { FiLink2 } from 'react-icons/fi'
 import { ImGithub } from 'react-icons/im'
 
+import { useTranslation } from "react-i18next";
+
 
 
 import AOS from "aos";
@@ -25,6 +27,11 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 AOS.init();
 
 function Project() {
+
+
+  const { t } = useTranslation();
+
+
   return (
     <>
       <div

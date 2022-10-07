@@ -1,7 +1,7 @@
 {
-    "home": "Home",
-    "skills": "Skills"
-    "qualification": "Qualification"
-    "projects": "Projects"
+    "home_link": "Дом",
+    "skills": "Skills",
+    "qualification": "Qualification",
+    "projects": "Projects",
     "contact": "Contact"
 }
