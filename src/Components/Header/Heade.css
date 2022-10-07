@@ -1,6 +1,6 @@
 .name
 {
-    padding-top: 20vh;
+    padding-top: 5vh;
     text-align: center;
     background: var(--f);
     transition:  background .5s;
@@ -10,6 +10,7 @@
 {
     font-weight: 500;
     color: var(--0);
+    font-size: 2.5em;
 }
 
 
@@ -163,7 +164,7 @@
 @media screen and (max-width: 860px) {
     .home_blog
     {
-        padding: 20px 80px;
+        padding: 20px 50px;
     }
 
     .img
@@ -176,7 +177,7 @@
 
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 635px) {
 
     .header
     {
@@ -224,6 +225,11 @@
         width: 60%;
         margin: 0 auto;
         height: 80vh;
+    }
+
+    .name h1
+    {
+        font-size: 1.5em;
     }
     
 }

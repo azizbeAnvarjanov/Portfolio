@@ -12,6 +12,11 @@ import { BiCollection, BiCategory } from 'react-icons/bi'
 import { BsBook } from 'react-icons/bs';
 
 
+// imgs
+import UZB from '../../imgs/uzb.jpg'
+import RUS from '../../imgs/rus.jpg'
+import USA from '../../imgs/usa.png'
+
 import i18next from 'i18next';
 
 const languages = [
@@ -37,6 +42,7 @@ function Navbar() {
     const { t } = useTranslation();
 
     const [mode, setMode] = useState('dark');
+    const [lng, setLng] = useState(false);
     const [navbar, setNavbar] = useState('hide_navbar');
     const [navbarActive, setNavbarActive] = useState(false);
     
@@ -57,8 +63,13 @@ function Navbar() {
     function show_navbar() {
         navbar === "hide_navbar" ? setNavbar('show_navabr') : setNavbar('hide_navbar');
     }
-    function show_lng() {
-      
+  
+
+    function change_lng(e) {
+      i18next.changeLanguage(e.target.id);
+      document.querySelectorAll(".lng")
+      .forEach((el) => el.classList.remove('active_lng'));
+      e.target.classList.add('active_lng');
     }
 
     window.addEventListener('scroll', () => {
@@ -75,18 +86,18 @@ function Navbar() {
           className={navbar === "hide_navbar" ? "hide_navbar" : "show_navbar"}
         >
           <li>
-            <a onClick={() => show_navbar()} href="#home">
+            <a className="nav_link" onClick={() => show_navbar()} href="#home">
               <HiHome className="link_icon" />
               {t("home_link")}
             </a>
           </li>
           <li>
-            <a onClick={() => show_navbar()} href="#skills">
+            <a className="nav_link" onClick={() => show_navbar()} href="#skills">
               <BiCollection className="link_icon" /> Skills
             </a>
           </li>
           <li>
-            <a onClick={() => show_navbar()} href="#qualification">
+            <a className="nav_link" onClick={() => show_navbar()} href="#qualification">
               <BsBook className="link_icon" /> Qualification
             </a>
           </li>
@@ -96,21 +107,35 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a onClick={() => show_navbar()} href="#projects">
+            <a className="nav_link" onClick={() => show_navbar()} href="#projects">
               <BiCategory className="link_icon" /> Projects
             </a>
           </li>
           <li>
-            <a onClick={() => show_navbar()} href="#contact">
+            <a className="nav_link" onClick={() => show_navbar()} href="#contact">
               <FaRegComment className="link_icon" /> Contact
             </a>
           </li>
           <li>
-            <a onClick={() => show_lng()} href="#contact">
-              <IoLanguage className="link_icon" /> Le
+            <a onClick={() => lng === false ? setLng(true) : setLng(false) } href="#">
+              <IoLanguage className="link_icon_lng" />
+              <div className={lng === true ? "lng_box active_lng_box" : "lng_box"}>
+                <a className='lng active_lng' onClick={(e) => change_lng(e)} key="uz" id="uz" href="#">
+                  Uz
+                  <img src={UZB} alt="" />
+                  </a>
+                <a className='lng' onClick={(e) => change_lng(e)} key="ru" id="ru" href="#">
+                  Ru
+                  <img src={RUS} alt="" />
+                  </a>
+                <a className='lng' onClick={(e) => change_lng(e)} key="en" id="en" href="#">
+                  En
+                  <img src={USA} alt="" />
+                  </a>
+              </div>
             </a>
           </li>
-          <div className="dark_mode">
+          <li className='dark_mode'>
             <FiMoon
               onClick={() => addClassDark()}
               className={mode === "dark" ? "active_mode" : ""}
@@ -119,7 +144,7 @@ function Navbar() {
               onClick={() => addClassLight()}
               className={mode === "light" ? "active_mode" : ""}
             />
-          </div>
+          </li>
         </ul>
         <div className={navbar === "hide_navbar" ? "menu" : "menu active_menu"}
           onClick={() => show_navbar()}>
@@ -134,4 +159,15 @@ function Navbar() {
 }
 
 export default Navbar
+
+  //  <div className="dark_mode">
+//   < FiMoon
+// onClick = {() => addClassDark()}
+// className = { mode === "dark" ? "active_mode" : ""}
+// />
+//   < FiSun
+// onClick = {() => addClassLight()}
+// className = { mode === "light" ? "active_mode" : ""}
+// />
+//           </div >
     
