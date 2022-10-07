@@ -80,7 +80,7 @@ function Navbar() {
     <>
       <nav className={navbarActive ? "navbar_active" : ""}>
         <h1 className="desktop_logo">
-          <a href="#home">Azizbek</a>
+          <a href="#home">{t("azizbek")}</a>
         </h1>
         <ul
           className={navbar === "hide_navbar" ? "hide_navbar" : "show_navbar"}
@@ -88,54 +88,93 @@ function Navbar() {
           <li>
             <a className="nav_link" onClick={() => show_navbar()} href="#home">
               <HiHome className="link_icon" />
-              {t("home_link")}
+              {t("home")}
             </a>
           </li>
           <li>
-            <a className="nav_link" onClick={() => show_navbar()} href="#skills">
-              <BiCollection className="link_icon" /> Skills
+            <a
+              className="nav_link"
+              onClick={() => show_navbar()}
+              href="#skills"
+            >
+              <BiCollection className="link_icon" /> {t("skills")}
             </a>
           </li>
           <li>
-            <a className="nav_link" onClick={() => show_navbar()} href="#qualification">
-              <BsBook className="link_icon" /> Qualification
+            <a
+              className="nav_link"
+              onClick={() => show_navbar()}
+              href="#qualification"
+            >
+              <BsBook className="link_icon" /> {t("qualification")}
             </a>
           </li>
           <li className="phone_logo">
             <a href="#home">
-              <h1>Azizbek</h1>
+              <h1>{t("azizbek")}</h1>
             </a>
           </li>
           <li>
-            <a className="nav_link" onClick={() => show_navbar()} href="#projects">
-              <BiCategory className="link_icon" /> Projects
+            <a
+              className="nav_link"
+              onClick={() => show_navbar()}
+              href="#projects"
+            >
+              <BiCategory className="link_icon" /> {t("projects")}
             </a>
           </li>
           <li>
-            <a className="nav_link" onClick={() => show_navbar()} href="#contact">
-              <FaRegComment className="link_icon" /> Contact
+            <a
+              className="nav_link"
+              onClick={() => show_navbar()}
+              href="#contact"
+            >
+              <FaRegComment className="link_icon" /> {t("contact")}
             </a>
           </li>
           <li>
-            <a onClick={() => lng === false ? setLng(true) : setLng(false) } href="#">
+            <a
+              onClick={() => (lng === false ? setLng(true) : setLng(false))}
+              href="#"
+            >
               <IoLanguage className="link_icon_lng" />
-              <div className={lng === true ? "lng_box active_lng_box" : "lng_box"}>
-                <a className='lng active_lng' onClick={(e) => change_lng(e)} key="uz" id="uz" href="#">
+              <div
+                className={lng === true ? "lng_box active_lng_box" : "lng_box"}
+              >
+                <a
+                  className="lng active_lng"
+                  onClick={(e) => change_lng(e)}
+                  key="uz"
+                  id="uz"
+                  href="#"
+                >
                   Uz
                   <img src={UZB} alt="" />
-                  </a>
-                <a className='lng' onClick={(e) => change_lng(e)} key="ru" id="ru" href="#">
+                </a>
+                <a
+                  className="lng"
+                  onClick={(e) => change_lng(e)}
+                  key="ru"
+                  id="ru"
+                  href="#"
+                >
                   Ru
                   <img src={RUS} alt="" />
-                  </a>
-                <a className='lng' onClick={(e) => change_lng(e)} key="en" id="en" href="#">
+                </a>
+                <a
+                  className="lng"
+                  onClick={(e) => change_lng(e)}
+                  key="en"
+                  id="en"
+                  href="#"
+                >
                   En
                   <img src={USA} alt="" />
-                  </a>
+                </a>
               </div>
             </a>
           </li>
-          <li className='dark_mode'>
+          <li className="dark_mode">
             <FiMoon
               onClick={() => addClassDark()}
               className={mode === "dark" ? "active_mode" : ""}
@@ -146,13 +185,14 @@ function Navbar() {
             />
           </li>
         </ul>
-        <div className={navbar === "hide_navbar" ? "menu" : "menu active_menu"}
-          onClick={() => show_navbar()}>
+        <div
+          className={navbar === "hide_navbar" ? "menu" : "menu active_menu"}
+          onClick={() => show_navbar()}
+        >
           <span></span>
           <span></span>
           <span></span>
         </div>
-        
       </nav>
     </>
   );
@@ -160,14 +200,5 @@ function Navbar() {
 
 export default Navbar
 
-  //  <div className="dark_mode">
-//   < FiMoon
-// onClick = {() => addClassDark()}
-// className = { mode === "dark" ? "active_mode" : ""}
-// />
-//   < FiSun
-// onClick = {() => addClassLight()}
-// className = { mode === "light" ? "active_mode" : ""}
-// />
-//           </div >
+
     

@@ -1,7 +1,106 @@
 {
-    "home_link": "Home",
+
+    
+    
+    "home": "Home",
     "skills": "Skills",
     "qualification": "Qualification",
+    "azizbek": "Azizbek",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+
+
+    "name_h1_1": "Hi, I'm Anvarjanov Azizbek",
+    "name_h1_2": "Frontend Developer",
+
+    "biography" : "BIOGRAPHY",
+    "home_info_description" : "Hi, I'm Anvarjanov Azizbek, Frontend Developer. Passionate aboutdesign beautiful web interfaces.",
+    "contact_upper" : "CONTACT",
+    "countries_1" : "Uzbekistan, Namangan",
+    "countries_2" : "aanvarjanov52gmail.com",
+    "phone_number" : "+998 88 254 77 75",
+
+    "languages" : "LANGUAGES",
+    "lng_p_1" : "Uzbek - Advansed",
+    "lng_p_2" : "Russian - Advansed",
+    "lng_p_3" : "English - Beginner",
+
+    "projects_upper" : "PROJECTS",
+    "projects_descr" : "1",
+
+    "country" : "COUNTRY",
+    "country_p" : "Uzbekistan, Namangan",
+
+    "resume" : "RESUME",
+    "resume_p" : "Download Rezume",
+
+
+
+    "frontend" : "Frontend",
+    "microsoft" : "Microsoft",
+    "intermediate" : "Intermediate",
+    "advanced" : "Advanced",
+
+
+
+    "qualification_h5" : "Experience & education",
+    "education" : "Education",
+    "inlab" : "Inlab",
+    "javascript" : "Javascript",
+
+    "month" : "month",
+    "algoritm" : "Algoritm",
+    "react" : "React Js",
+
+    "work" : "Work",
+    "work_descr" : "So far, I have not worked in any IT company, but in the future, the names of the most famous companies will be written in the buyer.",
+
+
+
+
+    "my_projects" : "My Projects",
+    "my_projects_descr" : "These projects are written in pure Javascript.",
+
+
+
+    "google_clone" : "Google clone",
+    "google_clone_descr" : "This project is a clone of Google's home page. This clone has the ability to change the background and change the color of the texts and other functions.",
+    
+    "programming_lng" : "This project is written in these programming languages",
+    "sourse" : "Sourse",
+    "demo" : "Demo",
+
+
+
+    "github_profil" : "Find Github Profil",
+    "github_profil_descr" : "In this project, you can find yourself looking for your Github account or a friend's account.",
+
+    "rock_paper_scissors" : "Rock Paper Scissors",
+    "rock_paper_scissors_descr" : "This project is known as a game called Rock, Scissors, Paper, this project is not very functional but it is playable.",
+
+    "todo_app" : "Rock Paper Scissors",
+    "todo_app_descr" : "This project is slightly modified from the Todo app, and tried to make it as functional as possible.",
+
+    "search_countries" : "Search Countries",
+    "search_countries_descr" : "This is a project where you can get information about yourself or other countries, for example population, currency and country.",
+
+
+
+
+
+
+    "message_popup" : "Thank you for your message.",
+    "contact_me" : "Contact Me",
+    "get_in_touch" : "Get in touch",
+    "talk_to_me" : "Talk to me",
+    "phone_number_text" : "Phone number",
+    "write_msg" : "Write your me message",
+    "name" : "Name",
+    "message" : "Message",
+    "send_btn" : "Send",
+
+    "pleaseholder_name" : "Write your name",
+    "pleaseholder_email" : "Write your email",
+    "pleaseholder_message" : "Write your message"
+
 }

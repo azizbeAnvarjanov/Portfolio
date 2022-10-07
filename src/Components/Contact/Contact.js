@@ -10,6 +10,8 @@ import { FaRegComment } from 'react-icons/fa';
 import { RiSendPlaneLine } from 'react-icons/ri';
 import { AiOutlineFileDone } from 'react-icons/ai';
 
+import { useTranslation } from "react-i18next";
+
 
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
@@ -17,6 +19,10 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 AOS.init();
 
 function Contact() {
+
+
+  
+  const { t } = useTranslation();
 
     const form = useRef();
 
@@ -62,19 +68,17 @@ function Contact() {
             <div className="icon_popup">
               <AiOutlineFileDone />
             </div>
-            <h4 className="message_popup">
-              Sizning habaringiz jonatildi habaringiz uchun raxmat.
-            </h4>
+            <h4 className="message_popup">{t("message_popup")}</h4>
             <button onClick={showPopup}>Ok</button>
           </div>
         </div>
 
-        <h1>Contact Me</h1>
-        <h4>Get in touch</h4>
+        <h1>{t("contact_me")}</h1>
+        <h4>{t("get_in_touch")}</h4>
         <form ref={form} onSubmit={sendEmail} className="contact_form">
           <div className="contact_form_1">
             <h3>
-              <FaRegComment /> Talk to me
+              <FaRegComment /> {t("talk_to_me")}
             </h3>
             <div>
               <p>Email</p>
@@ -87,7 +91,7 @@ function Contact() {
               </p>
             </div>
             <div>
-              <p>Phone number</p>
+              <p>{t("phone_number_text")}</p>
               <p className="addres">
                 <a target="_blank" href="tel:+998882547775">
                   +998 254 77 75
@@ -98,40 +102,40 @@ function Contact() {
 
           <div className="contact_form_2">
             <h3>
-              <RiSendPlaneLine /> Write your me message
+              <RiSendPlaneLine /> {t("write_msg")}
             </h3>
 
             <div className="input">
-              <p className="legend">Name</p>
+              <p className="legend">{t("name")}</p>
               <input
-              id='name'
+                id="name"
                 name="name"
                 required
                 type="text"
-                placeholder="Write your name"
+                placeholder={t("pleaseholder_name")}
               />
             </div>
             <div className="input">
               <p className="legend">Email</p>
               <input
-              id='email'
+                id="email"
                 name="email"
                 required
                 type="email"
-                placeholder="Write your email"
+                placeholder={t("pleaseholder_email")}
               />
             </div>
             <div className="textarea_box">
-              <p className="legend">Message</p>
+              <p className="legend">{t("message")}</p>
               <textarea
                 name="message"
                 required
                 className="textarea"
-                placeholder="Write your message"
+                placeholder={t("pleaseholder_message")}
               ></textarea>
             </div>
             <button type="submit" className="send_btn">
-              Send
+              {t("send_btn")}
             </button>
           </div>
         </form>

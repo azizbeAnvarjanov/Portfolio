@@ -1,7 +1,85 @@
 {
-    "home_link": "Uy",
-    "skills": "NAv",
-    "qualification": "Qualification",
-    "projects": "Projects",
-    "contact": "Contact"
+  "home": "Uy",
+  "skills": "Ko'nikmalar",
+  "qualification": "Malaka",
+  "azizbek": "Azizbek",
+  "projects": "Loyihalar",
+  "contact": "Aloqa",
+
+  "name_h1_1": "Salom, men Anvarjanov Azizbek",
+  "name_h1_2": "Frontend Dasturchiman",
+
+  "biography": "Biografiya",
+  "home_info_description": "Salom, men Anvarjanov Azizbek, Frontend Developer. Chiroyli veb-interfeyslarni loyihalashga ishtiyoqliman.",
+  "contact_upper": "Aloqa",
+  "countries_1": "Uzbekistan, Namangan",
+  "countries_2": "aanvarjanov52gmail.com",
+  "phone_number": "+998 88 254 77 75",
+
+  "languages": "Tillar",
+  "lng_p_1": "Uzbek - Murakkab",
+  "lng_p_2": "Russian - Murakkab",
+  "lng_p_3": "English - Boshlovchi",
+
+  "projects_upper": "Loyihalar",
+  "projects_descr": "1",
+
+  "country": "Mamlakat",
+  "country_p": "Uzbekistan, Namangan",
+
+  "resume": "Rezume",
+  "resume_p": "Rezumeni tortish",
+
+  "frontend": "Frontend",
+  "microsoft": "Microsoft",
+  "intermediate": "O'rta",
+  "advanced": "Murakkab",
+
+  "qualification_h5": "Tajriba va ta'lim",
+  "education": "Ta'lim",
+  "inlab": "Inlab",
+  "javascript": "Javascript",
+
+  "month": "oy",
+  "algoritm": "Algoritm",
+  "react": "React Js",
+
+  "work": "Ish",
+  "work_descr": "Hozircha men hech qanday IT-kompaniyada ishlaganim yo'q, ammo kelajakda eng mashhur kompaniyalarning nomi shuyerda yozilgan bo'ladi.",
+
+  "my_projects": "Mening loyihalarim",
+  "my_projects_descr": "Ushbu loyihalar sof Javascriptda yozilgan.",
+
+  "google_clone": "Google klon",
+  "google_clone_descr": "Ushbu loyiha Google bosh sahifasining klonidir. Ushbu klon matnlarning fonini o'zgartirish va rangini o'zgartirish va boshqa funktsiyalarga ega.",
+
+  "programming_lng": "Ushbu loyiha ushbu dasturlash tillarida yozilgan",
+  "sourse": "Manba",
+  "demo": "Namoyish",
+
+  "github_profil": "Github profilini toping",
+  "github_profil_descr": "Ushbu loyihada siz o'zingizning Github hisob qaydnomangizni yoki do'stingizning hisobini topishingiz mumkin.",
+
+  "rock_paper_scissors": "Tosh Qog'oz Qaychi",
+  "rock_paper_scissors_descr": "Ushbu loyiha 'Tosh Qog'oz Qaychi' deb nomlangan o'yin sifatida tanilgan, bu loyiha juda funktsional emas, lekin uni o'ynash mumkin.",
+
+  "todo_app": "Todo ilovasi",
+  "todo_app_descr": "Ushbu loyiha Todo ilovasidan biroz o'zgartirildi va uni iloji boricha funktsional qilishga harakat qildi.",
+
+  "search_countries": "Mamlakat qidiruvi",
+  "search_countries_descr": "Bu siz o'zingiz yoki boshqa mamlakatlar, aholi, valyuta va mamlakat haqida ma'lumot olishingiz mumkin bo'lgan loyihadir.",
+
+  "message_popup": "Xabaringiz uchun rahmat.",
+  "contact_me": "Men bilan bog'laning",
+  "get_in_touch": "Bog'lanish",
+  "talk_to_me": "Men bilan gaplashing",
+  "phone_number_text": "Telefon nomer",
+  "write_msg": "Menga xabar yuboring",
+  "name": "Ism",
+  "message": "Xabar",
+  "send_btn": "Yuborish",
+
+  "pleaseholder_name": "Ismingizni yozing",
+  "pleaseholder_email": "Elektron pochtangizni yozing",
+  "pleaseholder_message": "Xabaringizni yozing"
 }

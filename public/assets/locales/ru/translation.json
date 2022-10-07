@@ -1,7 +1,85 @@
 {
-    "home_link": "Дом",
-    "skills": "Skills",
-    "qualification": "Qualification",
-    "projects": "Projects",
-    "contact": "Contact"
+  "home": "Дом",
+  "skills": "Навыки",
+  "qualification": "Квалификация",
+  "azizbek": "Азизбек",
+  "projects": "Проекты",
+  "contact": "Контакт",
+
+  "name_h1_1": "Привет, я Анваржанов Азизбек",
+  "name_h1_2": "Фронтенд-разработчик",
+
+  "biography": "Биография",
+  "home_info_description": "Привет, я Анваржанов Азизбек, Frontend Developer. Увлечен дизайном красивых веб-интерфейсов.",
+  "contact_upper": "Контакт",
+  "countries_1": "Узбекистан, Наманган",
+  "countries_2": "aanvarjanov52gmail.com",
+  "phone_number": "+998 88 254 77 75",
+
+  "languages": "Языки",
+  "lng_p_1": "Uzbek - Продвинутый",
+  "lng_p_2": "Russian - Продвинутый",
+  "lng_p_3": "English - Новичок",
+
+  "projects_upper": "Проекты",
+  "projects_descr": "1",
+
+  "country": "СТРАНА",
+  "country_p": "Узбекистан, Наманган",
+
+  "resume": "Резюме",
+  "resume_p": "Загрузить Резюме",
+
+  "frontend": "Фронтенд",
+  "microsoft": "Микрософт",
+  "intermediate": "Средний",
+  "advanced": "Продвинутый",
+
+  "qualification_h5": "Опыт и образование",
+  "education": "Oбразование",
+  "inlab": "Инлаб",
+  "javascript": "Javascript",
+
+  "month": "месяц",
+  "algoritm": "Алгоритм",
+  "react": "React Js",
+
+  "work": "Работа",
+  "work_descr": "Пока я не работал ни в одной ИТ-компании, но в будущем в байер будут вписаны названия самых известных компаний.",
+
+  "my_projects": "Мои Проекты",
+  "my_projects_descr": "Эти проекты написаны на чистом Javascript.",
+
+  "google_clone": "Google клон",
+  "google_clone_descr": "Этот проект является клоном домашней страницы Google. В этом клоне есть возможность менять фон и менять цвет текстов и другие функции.",
+
+  "programming_lng": "Этот проект написан на этих языках программирования",
+  "sourse": "Источник",
+  "demo": "Демо",
+
+  "github_profil": "Найти профиль Github",
+  "github_profil_descr": "В этом проекте вы можете найти свою учетную запись Github или учетную запись друга.",
+
+  "rock_paper_scissors": "Камень Ножницы Бумага",
+  "rock_paper_scissors_descr": "Этот проект известен как игра под названием «Камень, ножницы, бумага», этот проект не очень функционален, но в него можно играть.",
+
+  "todo_app": "Приложение Todo",
+  "todo_app_descr": "Этот проект немного изменен по сравнению с приложением Todo и постарался сделать его максимально функциональным.",
+
+  "search_countries": "Поиск страны",
+  "search_countries_descr": "Это проект, в котором вы можете получить информацию о себе или других странах, например, о населении, валюте и стране.",
+
+  "message_popup": "Спасибо за ваше сообщение.",
+  "contact_me": "Свяжитесь со мной",
+  "get_in_touch": "Связаться",
+  "talk_to_me": "Поговори со мной",
+  "phone_number_text": "Номер телефона",
+  "write_msg": "Напишите мне сообщение",
+  "name": "Имя",
+  "message": "Сообщение",
+  "send_btn": "Отправить",
+
+  "pleaseholder_name": "Напишите своё имя",
+  "pleaseholder_email": "Введите адрес электронной почты",
+  "pleaseholder_message": "Напишите ваше сообщение"
 }

@@ -40,21 +40,17 @@ function Project() {
         data-aos-duration="3000"
         id="projects"
       >
-        <h1>My Projects</h1>
-        <h4>These projects are written in pure Javascript.</h4>
+        <h1>{t("my_projects")}</h1>
+        <h4>{t("my_projects_descr")}</h4>
 
         <div className="project_box project_1">
           <div className="project-img">
             <img src={Google} alt="" />
           </div>
           <div className="project-info">
-            <h2>Google clone</h2>
-            <p className="project_description">
-              This project is a clone of Google's home page. This clone has the
-              ability to change the background and change the color of the texts
-              and other functions.
-            </p>
-            <p>This project is written in these programming languages</p>
+            <h2>{t("google_clone")}</h2>
+            <p className="project_description">{t("google_clone_descr")}</p>
+            <p>{t("programming_lng")}</p>
             <div className="programming_lng">
               <span>
                 <img src={Html} alt="" />
@@ -72,16 +68,14 @@ function Project() {
                 href="https://azizbeanvarjanov.github.io/google/"
                 className="demo_btn"
               >
-                {" "}
-                <FiLink2 /> Demo
+                <FiLink2 /> {t("demo")}
               </a>
               <a
                 target="_blank"
                 href="https://github.com/azizbeAnvarjanov/google"
                 className="demo_btn"
               >
-                {" "}
-                <ImGithub /> Sourse
+                <ImGithub /> {t("sourse")}
               </a>
             </div>
           </div>
@@ -92,12 +86,9 @@ function Project() {
             <img src={Github} alt="" />
           </div>
           <div className="project-info">
-            <h2>Find Github Profil</h2>
-            <p className="project_description">
-              In this project, you can find yourself looking for your Github
-              account or a friend's account.
-            </p>
-            <p>This project is written in these programming languages</p>
+            <h2>{t("github_profil")}</h2>
+            <p className="project_description">{t("github_profil_descr")}</p>
+            <p>{t("programming_lng")}</p>
             <div className="programming_lng">
               <span>
                 <img src={Html} alt="" />
@@ -116,7 +107,7 @@ function Project() {
                 className="demo_btn"
               >
                 {" "}
-                <FiLink2 /> Demo
+                <FiLink2 /> {t("demo")}
               </a>
               <a
                 target="_blank"
@@ -124,7 +115,7 @@ function Project() {
                 className="demo_btn"
               >
                 {" "}
-                <ImGithub /> Sourse
+                <ImGithub /> {t("sourse")}
               </a>
             </div>
           </div>
@@ -135,12 +126,11 @@ function Project() {
             <img src={DondonZiki} alt="" />
           </div>
           <div className="project-info">
-            <h2>Rock Paper Scissors</h2>
+            <h2>{t("rock_paper_scissors")}</h2>
             <p className="project_description">
-              This project is known as a game called Rock, Scissors, Paper, this
-              project is not very functional but it is playable.
+              {t("rock_paper_scissors_descr")}
             </p>
-            <p>This project is written in these programming languages</p>
+            <p>{t("programming_lng")}</p>
             <div className="programming_lng">
               <span>
                 <img src={Html} alt="" />
@@ -159,7 +149,7 @@ function Project() {
                 className="demo_btn"
               >
                 {" "}
-                <FiLink2 /> Demo
+                <FiLink2 /> {t("demo")}
               </a>
               <a
                 target="_blank"
@@ -167,7 +157,7 @@ function Project() {
                 className="demo_btn"
               >
                 {" "}
-                <ImGithub /> Sourse
+                <ImGithub /> {t("sourse")}
               </a>
             </div>
           </div>
@@ -178,12 +168,11 @@ function Project() {
             <img src={Todo} alt="" />
           </div>
           <div className="project-info">
-            <h2>Todo App</h2>
+            <h2>{t("todo_app")}</h2>
             <p className="project_description">
-              This project is slightly modified from the Todo app, and tried to
-              make it as functional as possible.
+              {t("todo_app_descr")}
             </p>
-            <p>This project is written in these programming languages</p>
+            <p>{t("programming_lng")}</p>
             <div className="programming_lng">
               <span>
                 <img src={Html} alt="" />
@@ -202,7 +191,7 @@ function Project() {
                 className="demo_btn"
               >
                 {" "}
-                <FiLink2 /> Demo
+                <FiLink2 /> {t("demo")}
               </a>
               <a
                 target="_blank"
@@ -210,7 +199,7 @@ function Project() {
                 className="demo_btn"
               >
                 {" "}
-                <ImGithub /> Sourse
+                <ImGithub /> {t("sourse")}
               </a>
             </div>
           </div>
@@ -221,12 +210,11 @@ function Project() {
             <img src={Countries} alt="" />
           </div>
           <div className="project-info">
-            <h2>Search Countries</h2>
+            <h2>{t("search_countries")}</h2>
             <p className="project_description">
-              This is a project where you can get information about yourself or
-              other countries, for example population, currency and country.
+             {t("search_countries_descr")}
             </p>
-            <p>This project is written in these programming languages</p>
+            <p>{t("programming_lng")}</p>
             <div className="programming_lng">
               <span>
                 <img src={Html} alt="" />
@@ -245,7 +233,7 @@ function Project() {
                 className="demo_btn"
               >
                 {" "}
-                <FiLink2 /> Demo
+                <FiLink2 /> {t("demo")}
               </a>
               <a
                 target="_blank"
@@ -253,7 +241,7 @@ function Project() {
                 className="demo_btn"
               >
                 {" "}
-                <ImGithub /> Sourse
+                <ImGithub /> {t("sourse")}
               </a>
             </div>
           </div>
